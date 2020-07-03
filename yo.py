@@ -58,8 +58,8 @@ while True:
     try:
         # Select chat
         browser.switch_to.frame(browser.find_elements_by_class_name('Xyqxtc')[0])
-        yangster = browser.find_element_by_css_selector('div[title="' + chat_name + '"]')
-        yangster.click()
+        chat = browser.find_element_by_css_selector('div[title="' + chat_name + '"]')
+        chat.click()
         break
     except:
         # Check for browser refresh to allow access
